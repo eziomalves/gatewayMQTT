@@ -1,30 +1,13 @@
 /*
 * Autor: Eziom Alves
 * Data: 21 de Outubro de 2022.
-* Versão 5.0 - Versão Final
 */
 
-/*
- * Usar o MQTTlens para visualizar as informações do cliente mqtt
- * Instalar o MQTTlens como app no google chrome
- */
 #include "heltec.h"
 #include <PubSubClient.h>
 #include <WiFi.h>
 #include <ArduinoJson.h>
 
-
-
-/*
- * No lens, colocar os seguintes dados:
- * Connection name: Colocar um no qualquer para conexão
- * Hostname: test.mosquitto.org
- * Porta: 1883
- * 
- * Criar conexão
- * Em subcribe colocar "MQAr/PMS5003"
- */
- 
 
 /* utilizado para subscribe */
 #define TOPICO_PUBLISH   "MQAr/PMS5003"    /*tópico MQTT de envio de informações para Broker
@@ -51,12 +34,8 @@
 
 /* Constantes */
 
-//WIFI
-//const char* SSID = "Ourinet- Oliveira"; // coloque aqui o SSID/nome da rede WI-FI que deseja se conectar
-//const char* PASSWORD = "oliveira12345"; // coloque aqui a senha da rede WI-FI que deseja se conectar
-
-const char* SSID = "Jr Telecom-Alves"; // coloque aqui o SSID/nome da rede WI-FI que deseja se conectar
-const char* PASSWORD = "zhn193nvrb"; // coloque aqui a senha da rede WI-FI que deseja se conectar
+const char* SSID = ""; // coloque aqui o SSID/nome da rede WI-FI que deseja se conectar
+const char* PASSWORD = ""; // coloque aqui a senha da rede WI-FI que deseja se conectar
 
 //MQTT
 const char* BROKER_MQTT = "test.mosquitto.org"; //URL do broker MQTT que se deseja utilizar
