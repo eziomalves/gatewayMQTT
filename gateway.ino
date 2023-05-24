@@ -19,7 +19,7 @@
                                                              o mais único possível para você. */
 
 //utilizado para publish (MAC do gateway)
-#define ID_MQTT  "F008D1DD2C58"     /* id mqtt (para identificação de sessão)
+#define ID_MQTT  "XXXXXXXXXXXX"     /* id mqtt (para identificação de sessão)
                                        IMPORTANTE: este deve ser único no broker (ou seja, 
                                                    se um client MQTT tentar entrar com o mesmo 
                                                    id de outro já conectado ao broker, o broker 
